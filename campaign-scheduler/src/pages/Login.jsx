@@ -3,11 +3,11 @@ import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import * as Yup from "yup";
 import { loginUser } from '../api/api';
-import { AuthContext, useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
 
-    const { login } = useAuth(AuthContext);
+    const { login } = useAuth();
 
     const validationSchema = Yup.object().shape({
         email: Yup.string()

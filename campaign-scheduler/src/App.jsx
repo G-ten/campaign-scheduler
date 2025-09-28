@@ -24,10 +24,12 @@ const App = () => {
         theme="colored"
       />
       <Routes>
-        <Route path="/" element={<Layout />} >
-          <Route path="/" element={<RequireAuth><Dashboard /></RequireAuth>} />
-          <Route path="/create-campaign" element={<RequireAuth><CreateCampaign /></RequireAuth>} />
-          <Route path="/campaign/:id" element={<RequireAuth><CampaignDetail /></RequireAuth>} />
+        <Route element={<RequireAuth />}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="create-campaign" element={<CreateCampaign />} />
+            <Route path="campaign/:id" element={<CampaignDetail />} />
+          </Route>
         </Route>
         <Route path="/login" element={<RequireLogout><Login /></RequireLogout>} />
         <Route path="/signup" element={<RequireLogout><Signup /></RequireLogout>} />

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { AuthContext, useAuth } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 
 const Header = () => {
 
-    const { user, logout } = useAuth(AuthContext);
+    const { user, logout } = useAuth();
 
     return (
         <header className="header">
