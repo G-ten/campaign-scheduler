@@ -1,0 +1,82 @@
+.header {
+  background-color: #cfdaed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.error-font {
+  display: flex;
+  line-height: 1;
+  font-size: 13px;
+  color: rgb(255, 24, 24);
+  margin-top: -21px;
+}
+
+.page_404 {
+  padding: 40px 0;
+  background: #fff;
+  font-family: 'Arvo', serif;
+}
+
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 400px;
+  background-position: center;
+}
+
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.link_404 {
+  color: #fff !important;
+  padding: 10px 20px;
+  background: #39ac31;
+  margin: 20px 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contant_box_404 {
+  margin-top: -50px;
+}
+
+.overflow-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.react-datepicker-wrapper{
+  width: 100%;
+}
+
+.text-break{
+  text-wrap: wrap;
+}
